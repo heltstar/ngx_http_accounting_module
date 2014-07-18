@@ -11,7 +11,9 @@ typedef struct {
 } ngx_http_accounting_loc_conf_t;
 
 typedef struct {
-    ngx_flag_t      enable;
+    ngx_flag_t     enable;
+    ngx_str_t      origin_host; //origin host
+    ngx_str_t      origin_port; //origin port
 } ngx_http_accounting_main_conf_t;
 
 extern ngx_module_t ngx_http_accounting_module;
